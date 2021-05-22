@@ -1,0 +1,10 @@
+n = input()
+h = list(input().split(" "))
+h = [int(item) for item in h] 
+maximum = max(h)
+count = h.index(maximum)
+h.remove(maximum)
+h.insert(0, maximum)
+h.reverse()
+count += h.index(min(h))
+print (count)
