@@ -1,5 +1,5 @@
-name = input()
-count = min(abs(ord(name[0]) -  ord('a')), 26 - abs(ord(name[0]) -  ord('a')))
-for i in range(len(name) - 1):
-    count += min(abs(ord(name[i + 1]) -  ord(name[i])), 26 - abs(ord(name[i + 1]) -  ord(name[i])))
-print(count)
+Vus = list(map(int, input().split(" ")))
+if Vus[2] >= Vus[0] and Vus[1] >= Vus[0]:
+    print("YES")
+else:
+    print("NO")
