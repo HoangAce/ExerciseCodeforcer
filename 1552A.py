@@ -1,8 +1,13 @@
 def main():
-    t = int(input())
-    for i in range(t):
+    for i in range(int(input())):
         n = int(input())
-        print(n // 10 + (n % 10) // 9)
+        s = input()
+        k = n
+        sortS = sorted(s)
+        for j in range(n):
+            if s[j] == sortS[j]:
+                k -= 1
+        print(k)
 
 
 if __name__ == '__main__':
